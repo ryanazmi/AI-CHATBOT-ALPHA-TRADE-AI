@@ -3,37 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Justicia AI - Legal Assistant</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Alpha Trade AI - Modern Trading Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="overlay"></div>
-  <div class="container">
-    <header>
-      <div class="logo">
-        <i class="fas fa-balance-scale"></i>
-        <h1>Alpha Trade AI</h1>
-      </div>
-      <p>Asisten Trading Crypto dan Saham Anda</p>
-    </header>
+  <div class="glow-bg"></div>
 
-    <div id="chat-box" class="chat-box">
-      <div class="message bot">
-        Selamat datang di Alpha Trade AI. Mau trading Apa?
+  <nav>
+    <div class="logo">
+      <i class="fas fa-chart-line"></i>
+      <span>ALPHA TRADE AI</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#features">Fitur</a></li>
+      <li><a href="#interactive">Coba Bot</a></li>
+      <li><a href="#testimonials">Testimoni</a></li>
+    </ul>
+    <button class="btn-primary">Mulai Sekarang</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="glitch" data-text="TRADING DENGAN AI">TRADING DENGAN AI</h1>
+      <p>Dominasi pasar Crypto dan Saham dengan algoritma pintar yang bekerja 24/7 untuk Anda.</p>
+      <div class="hero-btns">
+        <a href="#interactive" class="btn-primary">Coba Demo Gratis</a>
+        <a href="#" class="btn-secondary">Lihat Performa</a>
       </div>
     </div>
+  </section>
 
-    <form id="chat-form">
-      <div class="input-group">
-        <input type="text" id="user-input" placeholder="Tanyakan sesuatu tentang hukum..." autocomplete="off" required />
-        <button type="submit">
-          <i class="fas fa-paper-plane"></i>
-        </button>
+  <section id="features" class="features">
+    <div class="section-title">
+      <h2>Mengapa Alpha Trade?</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <i class="fas fa-bolt"></i>
+        <h3>Eksekusi Kilat</h3>
+        <p>Analisis jutaan data dalam milidetik untuk sinyal presisi.</p>
       </div>
-    </form>
-  </div>
+      <div class="feature-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Manajemen Risiko</h3>
+        <p>Sistem pengaman otomatis untuk menjaga modal Anda tetap aman.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-brain"></i>
+        <h3>Deep Learning</h3>
+        <p>AI yang terus belajar dari setiap pergerakan pasar terbaru.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="interactive" class="interactive-section">
+    <div class="section-title">
+      <h2>Asisten Interaktif</h2>
+      <p>Tanyakan tren pasar atau analisis koin favorit Anda.</p>
+    </div>
+    
+    <div class="chat-container">
+      <header class="chat-header">
+        <div class="status-dot"></div>
+        <span>Alpha Trade AI Online</span>
+      </header>
+      <div id="chat-box" class="chat-box">
+        <div class="message bot">
+          Halo trader! Saya siap menganalisis pasar. Koin apa yang ingin kita bahas hari ini?
+        </div>
+      </div>
+      <form id="chat-form">
+        <div class="input-group">
+          <input type="text" id="user-input" placeholder="Ketik pesan..." autocomplete="off" required />
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="section-title">
+      <h2>Apa Kata Mereka?</h2>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testi-card">
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p>"Profit saya meningkat 40% sejak menggunakan bantuan Alpha Trade AI. Sangat direkomendasikan!"</p>
+        <div class="user-info">
+          <img src="https://i.pravatar.cc/50?u=1" alt="user">
+          <div>
+            <strong>Andi Pratama</strong>
+            <span>Crypto Enthusiast</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p>"Analisis teknikalnya sangat akurat, menghemat waktu saya untuk riset manual yang melelahkan."</p>
+        <div class="user-info">
+          <img src="https://i.pravatar.cc/50?u=2" alt="user">
+          <div>
+            <strong>Sarah Wijaya</strong>
+            <span>Day Trader</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Alpha Trade AI. All Rights Reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
