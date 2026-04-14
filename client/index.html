@@ -3,16 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gemini AI Chatbot</title>
+  <title>Justicia AI - Legal Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <div class="overlay"></div>
   <div class="container">
-    <h1>JUSTICIA AI</h1>
-    <div id="chat-box" class="chat-box"></div>
+    <header>
+      <div class="logo">
+        <i class="fas fa-balance-scale"></i>
+        <h1>Alpha Trade AI</h1>
+      </div>
+      <p>Asisten Trading Crypto dan Saham Anda</p>
+    </header>
+
+    <div id="chat-box" class="chat-box">
+      <div class="message bot">
+        Selamat datang di Alpha Trade AI. Mau trading Apa?
+      </div>
+    </div>
+
     <form id="chat-form">
-      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
-      <button type="submit">Send</button>
+      <div class="input-group">
+        <input type="text" id="user-input" placeholder="Tanyakan sesuatu tentang hukum..." autocomplete="off" required />
+        <button type="submit">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
     </form>
   </div>
   <script src="script.js"></script>
